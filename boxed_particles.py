@@ -26,8 +26,7 @@ class Box():
         speed = 10 # speed range to initialize each particle in
         eps = 0.1 # just a distance to initialize position of each particle away from walls
         for _ in range(N):
-            self.particles_list.append(Particle(r, m, rdm.uniform(lx+eps, ux-eps), rdm.uniform(ly+eps, uy-eps),
-                                                rdm.uniform(-speed, speed), rdm.uniform(-speed, speed)))
+            self.particles_list.append(Particle(r, m, rdm.uniform(lx+eps, ux-eps), rdm.uniform(ly+eps, uy-eps), rdm.uniform(-speed, speed), rdm.uniform(-speed, speed)))
 
 lx, ly, ux, uy = -1, -1, 1, 1 # limits of box
 N = 10 # number of particles
